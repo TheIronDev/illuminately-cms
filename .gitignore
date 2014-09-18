@@ -5,6 +5,7 @@ node_modules
 # Ignore automatically generated cruft
 *.log
 .sass-cache
+.idea/
 
 # Ignore config
 local-config.php
