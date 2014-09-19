@@ -191,12 +191,26 @@ div#footer
 
 /*** Overrides ***/
 
+.row-fluid br {display: none;}
+
 body {
-    background: #F6F6F6;
+    background: #fff;
+    padding: 0;
 }
 
 #header {
-    background: url(/wp-content/themes/illuminately/img/header-top.png) no-repeat transparent;
+    background: url(/wp-content/themes/illuminately/img/header-top.png) no-repeat bottom transparent;
+    height: 4em;
+}
+
+.logo {
+    position: absolute;
+    height: 4.7em;
+    margin-left: 4em;
+}
+
+#menu-navigation {
+    margin-top: 0.5em;
 }
 
 #main {
@@ -204,7 +218,7 @@ body {
 }
 
 #footer {
-    background: url(/wp-content/themes/illuminately/img/header-bottom.png) no-repeat transparent;
+    background: url(/wp-content/themes/illuminately/img/header-bottom.png) no-repeat top transparent;
     min-height: 60px;
     width: 100%;
 }
@@ -220,3 +234,57 @@ body {
 }
 
 h1 {text-align: center;color: #0093FF;font-weight: normal;}
+
+.package-details {display: inline-block;padding-bottom: 5px;border-bottom: 1px solid #FEC400;font-size: 1.2em}
+.package-details br {display: none}
+.package-details .amount {color: #C24D86;font-size: 1.5em;font-weight:bold;}
+.package-details .month {color: #FF7B00;}
+.package-details .shipping {color: #A6CB52}
+
+.package-notes {list-style: none;color: #83D2EA;margin:0;text-align: center;padding: 5px 0;}
+.package-notes li {line-height: 18px;}
+
+
+.themed-container-space {
+    background: url(/wp-content/uploads/2014/09/Space_bg1.jpg);
+    background-size: cover;
+
+    color: #fff;
+    padding: 2em;
+    position: relative;
+    border-top: 3px solid #43008E;
+}
+.themed-container-space:before {
+    content: ' ';
+    display: block;
+
+    background: #fff;
+    border-bottom: 3px solid #43008E;
+    border-right: 3px solid #43008E;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    right: 50%;
+    transform: rotatez(45deg);
+}
+
+.themed-container-space .hero {background: rgba(0,0,0,.5);}
+.themed-container-space h3 {color: #D84501;font-size: 2em;line-height: 1em;margin: 0;}
+.themed-container-space .steps {font-size: 2em;line-height: 2em;}
+.themed-container-space .step {
+    border: 1px solid #fff;
+    border-radius: 5em;
+
+    font-size: 1.5em;
+    background: rgba(0,0,0,.5);
+
+    padding: 0.2em;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    text-align: center;
+    line-height: 1em;
+    float: left;
+}

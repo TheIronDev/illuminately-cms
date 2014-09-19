@@ -27,10 +27,10 @@
 </head>
 <body>
 <div id="wrapper" class="hfeed">
-    <div id="header" class="navbar navbar-fixed-top ">
+	<div id="header" class="navbar navbar-fixed-top ">
         <div id="masthead" class="navbar-inner">
- 
             <div id="access" class="container">
+            	<img class="logo" src="/wp-content/themes/illuminately/img/logo.png" />
 				<!--<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'hbd-theme' ) ?>"><?php _e( 'Skip to content', 'hbd-theme' ) ?></a></div>-->
 				<?php #wp_page_menu( 'sort_column=menu_order' ); ?>
 				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_class' => 'nav pull-right' ) ); ?>
